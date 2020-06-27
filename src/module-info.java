@@ -3,4 +3,5 @@ module JuliaApplet {
     requires javafx.controls;
 
     opens sample;
+    opens sample.dataModels;
 }

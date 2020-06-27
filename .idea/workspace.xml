@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/dataModels/Paycheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/dataModels/Paycheck.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,8 +70,12 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1dgb8vmA3qcJ2ib3oOl7Yeo3lkx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -195,24 +205,36 @@
       <screen x="0" y="23" width="1440" height="836" />
     </state>
     <state x="320" y="106" key="#Project_Structure/0.23.1440.836@0.23.1440.836" timestamp="1592849595845" />
-    <state width="1398" height="216" key="GridCell.Tab.0.bottom" timestamp="1592894342312">
-      <screen x="0" y="23" width="1440" height="835" />
+    <state x="533" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1593286291537">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
+    <state x="533" y="130" key="#com.intellij.ide.util.MemberChooser/0.23.1440.834@0.23.1440.834" timestamp="1593286291537" />
+    <state width="1398" height="215" key="GridCell.Tab.0.bottom" timestamp="1593286599839">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state width="1398" height="215" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1593286262561" />
+    <state width="1398" height="215" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1593286599839" />
     <state width="1398" height="216" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1592894342306" />
     <state width="1398" height="216" key="GridCell.Tab.0.bottom/0.23.1440.836@0.23.1440.836" timestamp="1592862581244" />
-    <state width="1398" height="216" key="GridCell.Tab.0.center" timestamp="1592894342287">
-      <screen x="0" y="23" width="1440" height="835" />
+    <state width="1398" height="215" key="GridCell.Tab.0.center" timestamp="1593286599839">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
+    <state width="1398" height="215" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1593286262559" />
+    <state width="1398" height="215" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1593286599839" />
     <state width="1398" height="216" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1592894342287" />
     <state width="1398" height="216" key="GridCell.Tab.0.center/0.23.1440.836@0.23.1440.836" timestamp="1592862581242" />
-    <state width="1398" height="216" key="GridCell.Tab.0.left" timestamp="1592894342247">
-      <screen x="0" y="23" width="1440" height="835" />
+    <state width="1398" height="215" key="GridCell.Tab.0.left" timestamp="1593286599838">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
+    <state width="1398" height="215" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1593286262558" />
+    <state width="1398" height="215" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1593286599838" />
     <state width="1398" height="216" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1592894342247" />
     <state width="1398" height="216" key="GridCell.Tab.0.left/0.23.1440.836@0.23.1440.836" timestamp="1592862581242" />
-    <state width="1398" height="216" key="GridCell.Tab.0.right" timestamp="1592894342294">
-      <screen x="0" y="23" width="1440" height="835" />
+    <state width="1398" height="215" key="GridCell.Tab.0.right" timestamp="1593286599839">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
+    <state width="1398" height="215" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1593286262560" />
+    <state width="1398" height="215" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1593286599839" />
     <state width="1398" height="216" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1592894342294" />
     <state width="1398" height="216" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1592862581243" />
     <state width="1398" height="268" key="GridCell.Tab.1.bottom" timestamp="1592861102608">
@@ -235,5 +257,9 @@
     </state>
     <state width="1398" height="268" key="GridCell.Tab.1.right/0.23.1440.835@0.23.1440.835" timestamp="1592861102606" />
     <state width="1398" height="268" key="GridCell.Tab.1.right/0.23.1440.836@0.23.1440.836" timestamp="1592860099155" />
+    <state x="399" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1593285901743">
+      <screen x="0" y="23" width="1440" height="833" />
+    </state>
+    <state x="399" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.833@0.23.1440.833" timestamp="1593285901743" />
   </component>
 </project>

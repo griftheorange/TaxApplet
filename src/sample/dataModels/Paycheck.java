@@ -25,4 +25,68 @@ public class Paycheck {
         this.grossTaxOwed.set(Double.toString(grossTaxOwed));
         this.amount.set(Double.toString(amount));
     }
+
+    public String getCheckDeposit() {
+        return checkDeposit.get();
+    }
+
+    public SimpleStringProperty checkDepositProperty() {
+        return checkDeposit;
+    }
+
+    public String getSavDeposit() {
+        return savDeposit.get();
+    }
+
+    public SimpleStringProperty savDepositProperty() {
+        return savDeposit;
+    }
+
+    public String getDate() {
+        return date.get();
+    }
+
+    public SimpleStringProperty dateProperty() {
+        return date;
+    }
+
+    public String getCheckBalance() {
+        return checkBalance.get();
+    }
+
+    public SimpleStringProperty checkBalanceProperty() {
+        return checkBalance;
+    }
+
+    public String getSavBalance() {
+        return savBalance.get();
+    }
+
+    public SimpleStringProperty savBalanceProperty() {
+        return savBalance;
+    }
+
+    public String getGrossIncome() {
+        return grossIncome.get();
+    }
+
+    public SimpleStringProperty grossIncomeProperty() {
+        return grossIncome;
+    }
+
+    public String getGrossTaxOwed() {
+        return grossTaxOwed.get();
+    }
+
+    public SimpleStringProperty grossTaxOwedProperty() {
+        return grossTaxOwed;
+    }
+
+    public String getAmount() {
+        return amount.get();
+    }
+
+    public SimpleStringProperty amountProperty() {
+        return amount;
+    }
 }
