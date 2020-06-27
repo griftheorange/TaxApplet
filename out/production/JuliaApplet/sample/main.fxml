@@ -4,10 +4,8 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <BorderPane fx:controller="sample.Controller"
             xmlns:fx="http://javafx.com/fxml"
@@ -34,52 +32,55 @@
         </GridPane>
     </left>
     <center>
-        <ScrollPane hbarPolicy="AS_NEEDED">
-            <TableView fx:id="tableView">
-                <columnResizePolicy><TableView fx:constant="UNCONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
-                <columns>
-                    <TableColumn text="Checking Deposit">
-                        <cellValueFactory>
-                            <PropertyValueFactory property="checkDeposit"/>
-                        </cellValueFactory>
-                    </TableColumn>
-                    <TableColumn text="Savings Deposit">
-                        <cellValueFactory>
-                            <PropertyValueFactory property="savDeposit"/>
-                        </cellValueFactory>
-                    </TableColumn>
-                    <TableColumn text="Date">
-                        <cellValueFactory>
-                            <PropertyValueFactory property="date"/>
-                        </cellValueFactory>
-                    </TableColumn>
-                    <TableColumn text="Checking Balance">
-                        <cellValueFactory>
-                            <PropertyValueFactory property="checkBalance"/>
-                        </cellValueFactory>
-                    </TableColumn>
-                    <TableColumn text="Savings Balance">
-                        <cellValueFactory>
-                            <PropertyValueFactory property="savDeposit"/>
-                        </cellValueFactory>
-                    </TableColumn>
-                    <TableColumn text="Gross Income">
-                        <cellValueFactory>
-                            <PropertyValueFactory property="grossIncome"/>
-                        </cellValueFactory>
-                    </TableColumn>
-                    <TableColumn text="Gross Tax Owed">
-                        <cellValueFactory>
-                            <PropertyValueFactory property="grossTaxOwed"/>
-                        </cellValueFactory>
-                    </TableColumn>
-                    <TableColumn text="Paycheck Amount">
-                        <cellValueFactory>
-                            <PropertyValueFactory property="amount"/>
-                        </cellValueFactory>
-                    </TableColumn>
-                </columns>
-            </TableView>
-        </ScrollPane>
+        <TableView fx:id="tableView" style="width: 100">
+            <columnResizePolicy><TableView fx:constant="UNCONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+            <columns>
+                <TableColumn text="Checking Deposit">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="checkDeposit"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Savings Deposit">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="savDeposit"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Paycheck Amount">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="amount"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Date">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="date"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Checking Balance">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="checkBalance"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Savings Balance">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="savBalance"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Gross Income">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="grossIncome"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Tax Owed">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="taxOwed"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Gross Tax Owed">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="grossTaxOwed"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
     </center>
 </BorderPane>

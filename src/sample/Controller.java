@@ -1,6 +1,5 @@
 package sample;
 
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableView;
@@ -14,9 +13,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Controller {
-
-    private static final String dataPath = "data.txt";
-    private static final String historyPath = "history.txt";
     private static HashMap<String, String> history;
 
     @FXML
@@ -51,8 +47,6 @@ public class Controller {
         currentSavingsBalanceField.setText(history.get("savingsBalance"));
 
         tableView.setItems(paycheckList.getPaychecks());
-        paycheckList.addItem(new Paycheck(20, 20, LocalDate.now(), 20, 30, 40, 50, 60));
-
     }
 
     @FXML
@@ -67,7 +61,7 @@ public class Controller {
             double checkingBalance = Double.parseDouble(currentCheckingBalanceField.getText());
             double savingsBalance = Double.parseDouble(currentSavingsBalanceField.getText());
 
-            double taxAmount = amount*(taxPercent/100.0);
+            double taxAmount = Double.parseDouble(String.format("%.2f", amount*(taxPercent/100.0)));
             double toChecking = loanPayment + transitCost + biweeklyBudget;
             double toSavings = amount - toChecking;
 
@@ -79,8 +73,22 @@ public class Controller {
             } else {
                 double newCheckingBalance = checkingBalance + toChecking;
                 double newSavingsBalance = savingsBalance + toSavings;
+                double grossIncome;
+                double grossTaxOwed;
+                try {
+                    grossIncome = amount + Double.parseDouble(paycheckList.getLast().getGrossIncome());
+                    grossTaxOwed = taxAmount + Double.parseDouble(paycheckList.getLast().getGrossTaxOwed());
+                } catch(IndexOutOfBoundsException e){
+                    grossIncome = amount;
+                    grossTaxOwed = taxAmount;
+                }
+
+                paycheckList.addItem(new Paycheck(toChecking, toSavings, date, newCheckingBalance, newSavingsBalance, grossIncome, taxAmount, grossTaxOwed, amount));
+                paycheckList.sortDesc();
+
                 currentCheckingBalanceField.setText(Double.toString(newCheckingBalance));
                 currentSavingsBalanceField.setText(Double.toString(newSavingsBalance));
+
                 saveToHistory(newCheckingBalance, newSavingsBalance);
             }
         } catch(NumberFormatException e){
@@ -90,7 +98,7 @@ public class Controller {
     }
 
     private void saveToHistory(double newCheck, double newSav){
-        try(FileWriter writer = new FileWriter(historyPath);
+        try(FileWriter writer = new FileWriter(Paths.historyPath);
             BufferedWriter history = new BufferedWriter(writer);){
             history.write("taxPercent:"+taxPercentField.getText()+"\n");
             history.write("transitCost:"+transitCostField.getText()+"\n");
@@ -106,7 +114,7 @@ public class Controller {
 
     private static HashMap<String, String> getHistoryToMap(){
         HashMap<String, String> history = new HashMap<>();
-        try(FileReader reader = new FileReader(historyPath);
+        try(FileReader reader = new FileReader(Paths.historyPath);
             BufferedReader bufferedReader = new BufferedReader(reader);
             Scanner historyScanner = new Scanner(bufferedReader)){
             while(historyScanner.hasNext()){

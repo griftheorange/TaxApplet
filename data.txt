@@ -1,0 +1,4 @@
+{"date":"2020-06-27","savingsDeposit":"250.0","checkingBalance":"20700.0","amount":"800.0","savingsBalance":"13103.0","checkingDeposit":"550.0","grossIncome":"1700.0","taxOwed":"160.0","grossTaxOwed":"340.0"},
+{"date":"2020-06-27","savingsDeposit":"503.0","checkingBalance":"20150.0","amount":"1053.0","savingsBalance":"12853.0","checkingDeposit":"550.0","grossIncome":"1953.0","taxOwed":"210.6","grossTaxOwed":"390.6"},
+{"date":"2020-06-27","savingsDeposit":"500.0","checkingBalance":"19600.0","amount":"1050.0","savingsBalance":"12350.0","checkingDeposit":"550.0","grossIncome":"1950.0","taxOwed":"210.0","grossTaxOwed":"390.0"},
+{"date":"2020-06-27","savingsDeposit":"350.0","checkingBalance":"19050.0","amount":"900.0","savingsBalance":"11850.0","checkingDeposit":"550.0","grossIncome":"900.0","taxOwed":"180.0","grossTaxOwed":"180.0"},
