@@ -1,0 +1,7 @@
+taxPercent:20
+transitCost:150
+loanPayment:250
+biweeklyBudget:150
+date:2020-06-22
+checkingBalance:6200.0
+savingsBalance:5850.0

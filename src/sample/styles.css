@@ -1,0 +1,5 @@
+.left-form-box {
+    -fx-border-style: none none solid none;
+    -fx-border-color: black;
+    -fx-padding:10px;
+}
