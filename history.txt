@@ -2,6 +2,6 @@ taxPercent:20
 transitCost:150
 loanPayment:250
 biweeklyBudget:150
-date:2020-06-27
-checkingBalance:20700.0
-savingsBalance:13103.0
+date:2020-07-02
+checkingBalance:21250.0
+savingsBalance:363794.0
